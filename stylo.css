@@ -1,4 +1,4 @@
-
+/* REQUISITO: Utilizar Google Fonts para cambiar el tipo de fuente del documento */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -76,3 +76,63 @@
         border: solid darkcyan 1px;
         border-radius: 5px;
     }
+
+    /* --- ESTILOS PARA EL BONUS: TABLA DE SELECTORES (Se aplicaron estilos para imitar la apariencia del PDF) --- */
+    
+    .vorde-tabla {
+    margin-top: 30px;
+    padding: 4px;
+    border: solid darkcyan 1px;
+    border-radius: 5px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid darkcyan;
+}
+
+th {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(120, 120, 120, 0.1);
+}
+
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 5px;
+        text-align: left;
+        vertical-align: top;
+        color: black;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: 1200;
+    }
+
+    /* Efecto "Cebra" para las filas pares */
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* Estilo de la primera columna para imitar el PDF */
+    td:first-child {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+ 

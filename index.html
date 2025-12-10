@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COMENTARIO: Se añade Google Fonts y Font Awesome, como parte de los requisitos de la tarea. -->
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="./stylo.css">
+    <!-- REQUISITO: Utilizar Font Awesome para añadir un icono de página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- REQUISITO: Icono como favicon de la pestaña (&#xf1c1; es el código del icono de PDF) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#xf1c1;</text></svg>">
 </head>
-
 <body>
     <h1>CSS Selectors</h1>
     <p>A CSS selector selects the HTML element(s) you want to style.</p>
@@ -18,11 +23,15 @@
         <p>We can divide CSS selectors into five categories:</p>
         <ul>
             <li>Simple selectors (select elements based on name, id, class)</li>
-            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
-            <li>Pseudo-class selectors (select elements based on a certain state)
+            <li> <a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a>  
+              (select elements based on a specific relationship between them)</li>
+            <li> <a href="https://www.w3schools.com/css/css_pseudo_classes.asp"> Pseudo-class selectors </a> 
+              (select elements based on a certain state)
             </li>
-            <li>Pseudo-elements selectors (select and style a part of an element)</li>
-            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            <li> <a href="https://www.w3schools.com/css/css_pseudo_elements.asp"> Pseudo-elements selectors </a> 
+              (select and style a part of an element)</li>
+            <li> <a href="https://www.w3schools.com/css/css_attribute_selectors.asp">  Attribute selectors </a>
+              (select elements based on an attribute or attribute value)</li>
         </ul>
     </div>
     <hr>
@@ -54,10 +63,53 @@
         </div>
         <div>
             <h3>All CSS Simple Selectors</h3>
-            <img src="./resources/selectors.png" alt="">
+            <div class="vorde-tabla">
+            <!-- BONUS: Crear la tabla inferior con <TABLE> en lugar de insertarla como imagen. -->
+            <table>
+              <thead>
+                <tr>
+                  <th>Selector</th>
+                  <th>Example</th>
+                  <th>Example description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#id</td>
+                  <td>#firstname</td>
+                  <td>Selects the element with id="firstname"</td>
+                </tr>
+                <tr>
+                  <td>.class</td>
+                  <td>.intro</td>
+                  <td>Selects all elements with class="intro"</td>
+                </tr>
+                <tr>
+                  <td>element.class</td>
+                  <td>p.intro</td>
+                  <td>Selects only &lt;p&gt; elements with class="intro"</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>*</td>
+                  <td>Selects all elements</td>
+                </tr>
+                <tr>
+                  <td>element</td>
+                  <td>p</td>
+                  <td>Selects all &lt;p&gt; elements</td>
+                </tr>
+                <tr>
+                  <td>element,element,...</td>
+                  <td>div, p</td>
+                  <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- La imagen original selectors.png se ha sustituido por la tabla. -->
         </div>
     </div>
+    <br>
 
 </body>
-
 </html>
